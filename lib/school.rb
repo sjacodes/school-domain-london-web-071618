@@ -23,11 +23,11 @@ class School
   end
   
   def sort
-    new_roster = {}
+    sorted_roster = {}
     @roster.each do |grade, student_array|
-      new_roster[grade] = student_array.sort
+      sorted_roster[grade] = student_array.sort
     end
-    return new_roster
+    return sorted_roster
   end
   
 end
